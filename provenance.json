@@ -1,0 +1,19 @@
+{
+  "exported": "2026-10-23",
+  "sourceStudy": "https://childrenhelpingscience.com/exp/studies/6286/",
+  "sourceStudyUUID": "1d2f8f0f-261f-4b8e-ad11-32b615c07f7a",
+  "sourceSHA256": "3f3951332846453a88d107c7afb5f95b343e680ca6277fd73dedc4ce15a552b3",
+  "sourceFNV1a": 868198028,
+  "originalReference": "https://c-steele.github.io/group-lookit/?rev=guided-walkthrough-20261003",
+  "referenceCommit": "bd506e2cd347418670a146b54acf002518297a26",
+  "recording": false,
+  "cameraAccess": false,
+  "consentSubmission": false,
+  "participantResponseStorage": false,
+  "notes": [
+    "Original CHS protocol restored, not modified by this export.",
+    "CHS-only camera, consent and recording screens are read-only references.",
+    "Parent instructions and Evelyn audio use the original CHS content.",
+    "32 review counterbalances, 37 source delivery entries each. Review selection is not participant random assignment."
+  ]
+}
