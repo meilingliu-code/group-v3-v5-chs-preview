@@ -10,3 +10,8 @@ Keep editing V1 until the user explicitly requests a new version. Do not create 
 - Show only the parent setting up on the overview; replace that page’s narration with matching Evelyn Soft audio at 1.15x (207 WPM).
 - Preserve welcome narration, the separate cover page, parent practice, all source movies, and all no-recording safeguards.
 - V0 and the CHS/reference studies are unchanged.
+
+## October 27, 2026 — overview styling
+
+- Put the overview copy in a rounded, light-sage text card with consistent padding, balanced line lengths, even paragraph spacing, and a subtle divider before the final setup prompt.
+- Keep all wording, narration, illustrations, study behavior, V0, and CHS unchanged.
