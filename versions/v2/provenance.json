@@ -1,0 +1,45 @@
+{
+  "exported": "2026-10-23",
+  "sourceStudy": "https://childrenhelpingscience.com/exp/studies/6286/",
+  "sourceStudyUUID": "1d2f8f0f-261f-4b8e-ad11-32b615c07f7a",
+  "sourceSHA256": "3f3951332846453a88d107c7afb5f95b343e680ca6277fd73dedc4ce15a552b3",
+  "sourceFNV1a": 868198028,
+  "originalReference": "https://c-steele.github.io/group-lookit/?rev=guided-walkthrough-20261003",
+  "referenceCommit": "bd506e2cd347418670a146b54acf002518297a26",
+  "recording": false,
+  "cameraAccess": false,
+  "consentSubmission": false,
+  "participantResponseStorage": false,
+  "notes": [
+    "Original CHS protocol restored, not modified by this export.",
+    "CHS-only camera, consent and recording screens are read-only references.",
+    "Parent instructions and Evelyn audio use the original CHS content.",
+    "32 review counterbalances, 37 source delivery entries each. Review selection is not participant random assignment."
+  ],
+  "version": {
+    "version": "V2",
+    "status": "working",
+    "created": "2026-10-27",
+    "previousVersion": "V1",
+    "sourceV1Commit": "d1a0e9b936a7d0a5dfdd3d47bad414323663af68",
+    "url": "https://meilingliu-code.github.io/group-v3-v5-chs-preview/versions/v2/",
+    "v1Url": "https://meilingliu-code.github.io/group-v3-v5-chs-preview/versions/v1/",
+    "v0Url": "https://meilingliu-code.github.io/group-v3-v5-chs-preview/",
+    "changes": [
+      "Remove the former Setup 2 page: Ensure your baby’s face is clearly lit.",
+      "Renumber remaining setup pages 1–3 and connect the computer page directly to the camera examples.",
+      "Remove the deleted page from normal and researcher-review navigation."
+    ],
+    "preserved": [
+      "V1 files and link",
+      "V0 files and link",
+      "Existing aesthetics and Evelyn 1.15x narration on remaining pages",
+      "All study movies and counterbalances",
+      "No-recording and no-data-collection safeguards"
+    ],
+    "policy": "Make subsequent edits in V2 until the user explicitly requests another numbered version.",
+    "recording": false,
+    "CHSStudyChanged": false
+  },
+  "sourceV0Commit": "2a7d2479696d0aa08760ee764f4df99772148936"
+}
