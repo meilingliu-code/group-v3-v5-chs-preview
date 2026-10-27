@@ -31,9 +31,26 @@
       "Replace overview illustration with the same POC parent setting up alone."
     ],
     "narration": {
-      "welcome": "unchanged",
+      "welcome": "NaturalReaders Evelyn Soft, 1.15x (207 WPM); starts Ready, grown-ups?",
       "overview": "NaturalReaders Evelyn Soft, 1.15x (207 WPM)",
-      "overviewScript": "These first pages are just for you. Your baby doesn’t need to join until setup and practice are finished.\n\nAfter set up is complete, your baby will watch short, simple videos, while you watch their reactions.\n\nWhen you’re ready, choose Let’s get set up."
+      "overviewScript": "These first pages are just for you. Your baby doesn’t need to join until setup and practice are finished.\n\nAfter set up is complete, your baby will watch short, simple videos, while you watch their reactions.\n\nWhen you’re ready, choose Let’s get set up.",
+      "updatedPages": [
+        {
+          "frame": "group-cover-welcome-v1",
+          "file": "cover-welcome-evelyn-115-v1.mp3",
+          "script": "Welcome, grown-ups! Setup and practice. Then baby’s turn."
+        },
+        {
+          "frame": "group-guided-welcome-v3",
+          "file": "ready-grownups-evelyn-115-v1.mp3",
+          "script": "Ready, grown-ups? Thank you for joining us with your baby. We’ll help you get comfortable, one step at a time."
+        },
+        {
+          "frame": "group-guided-room-v3",
+          "file": "quiet-room-evelyn-115-v1.mp3",
+          "script": "Second, find a quiet spot. Move toys and other distractions out of view. Turn off extra screens and other sounds. Make sure light comes from the computer side, onto your baby’s face. Avoid a bright window behind your baby, which can make their face hard to see."
+        }
+      ]
     },
     "scientificMoviesChanged": false,
     "CHSStudyChanged": false,

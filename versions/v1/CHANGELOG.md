@@ -15,3 +15,10 @@ Keep editing V1 until the user explicitly requests a new version. Do not create 
 
 - Put the overview copy in a rounded, light-sage text card with consistent padding, balanced line lengths, even paragraph spacing, and a subtle divider before the final setup prompt.
 - Keep all wording, narration, illustrations, study behavior, V0, and CHS unchanged.
+
+## October 27, 2026 — narration corrections
+
+- Narrate the opening cover text in Evelyn Soft at 1.15x, with replay/stop and automatic-narration controls.
+- Start the following welcome narration with “Ready, grown-ups?” to match its heading.
+- Clarify Setup 2 narration: remove distractions, turn off extra screens/sounds, light baby’s face from the computer side, and avoid a bright window behind baby.
+- Update matching transcripts; preserve the overview card, illustrations, study flow, scientific movies, and V0.

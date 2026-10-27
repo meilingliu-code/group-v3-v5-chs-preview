@@ -126,7 +126,7 @@
     generation++;movieCleanup();movieCleanup=()=>{};stopMedia();
     index=position;picker.value=String(index);const id=order[index],f=frames[id];
     try{
-      if(id==='group-cover-welcome-v1'){instruction(id,f);}
+      if(id==='group-cover-welcome-v1'){initializeShared();instruction(id,f);}
       else if(id==='group-upload-complete-v1')reference('Upload confirmation · reference only','<div class="preview-only"><strong>No recording or upload took place.</strong>This copy must not show a successful upload confirmation. In CHS, the next screen checks the real upload result.</div><p>The source study shows “Your video uploaded” only after CHS reports a completed upload. Otherwise, it asks the family to contact the study team.</p>','Review webcam setup and consent →');
       else if(f.kind==='exp-lookit-instructions'){initializeShared();instruction(id,f);}
       else if(f.kind==='choice')movie();
