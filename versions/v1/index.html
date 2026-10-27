@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Standalone, read-only preview of the GROUP V3/V5 CHS study. No camera, recording, consent submission or participant data collection.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; media-src 'self' https: blob:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>GROUP V3/V5 — V1 working preview</title>
+  <link rel="stylesheet" href="preview.css">
+  <link rel="stylesheet" href="welcome-v1.css">
+  <script defer src="protocol.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="preview-bar">
+    <div><strong>GROUP V3/V5 · CHS content preview</strong><span class="version-badge">V1 · Working version</span><small>Review only · Camera and recording off · No participant responses saved</small></div>
+    <details class="preview-navigation"><summary>Review navigation</summary><div>
+      <label>Review a page <select id="page-picker"></select></label>
+      <label>Movie version <select id="version-picker"><option value="V3">V3 · three per group</option><option value="V5">V5 · five per group</option></select></label>
+      <label>Counterbalance <select id="condition-picker"></select></label>
+      <p>Navigation is for review. Skips do not mark parent practice passed. Movie settings are chosen for review, not participant assignment.</p>
+      <a href="../../" target="_blank" rel="noopener">Preserved V0</a>
+      <a href="https://childrenhelpingscience.com/exp/studies/6286/" target="_blank" rel="noopener">Original CHS study</a>
+      <a href="https://c-steele.github.io/group-lookit/?rev=guided-walkthrough-20261003" target="_blank" rel="noopener">Original reference template</a>
+    </div></details>
+  </header>
+  <main id="experiment-player" aria-live="off"></main>
+  <footer class="preview-footer">V1 · Editing in progress. V0 and both original reference links are preserved. This is not a live study or a recording/upload test.</footer>
+  <noscript>This preview needs JavaScript. Camera access and study recording are never used.</noscript>
+</body>
+</html>

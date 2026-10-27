@@ -1,0 +1,24 @@
+{
+  "version": "V1",
+  "status": "working",
+  "previousVersion": "V0",
+  "v0Url": "https://meilingliu-code.github.io/group-v3-v5-chs-preview/",
+  "url": "https://meilingliu-code.github.io/group-v3-v5-chs-preview/versions/v1/",
+  "created": "2026-10-23",
+  "policy": "Keep editing V1 until the user explicitly requests a new version at the end of an editing session.",
+  "changes": [
+    "Pictured welcome-page heading: Ready, grown-ups?",
+    "Keep the base laptop/check illustration and add a brown-skinned adult and baby in a simple, uncluttered setup.",
+    "Replace overview copy and narration with the requested parent-only setup explanation, with a clear paragraph break.",
+    "Replace overview illustration with the same POC parent setting up alone."
+  ],
+  "narration": {
+    "welcome": "unchanged",
+    "overview": "NaturalReaders Evelyn Soft, 1.15x (207 WPM)",
+    "overviewScript": "These first pages are just for you. Your baby doesn’t need to join until setup and practice are finished.\n\nAfter set up is complete, your baby will watch short, simple videos, while you watch their reactions.\n\nWhen you’re ready, choose Let’s get set up."
+  },
+  "scientificMoviesChanged": false,
+  "CHSStudyChanged": false,
+  "recording": false,
+  "lastEdited": "2026-10-27"
+}

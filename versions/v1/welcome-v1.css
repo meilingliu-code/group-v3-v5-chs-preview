@@ -1,0 +1,7 @@
+/* V1 only: retain the existing vector aesthetic and keep the laptop prominent. */
+.gi-welcome .gi-quick-setup svg[data-family-setup-v1]{display:block;width:min(100%,300px);height:138px!important;max-height:138px!important;margin:0 auto}
+.version-badge{display:inline-block;margin-left:8px;padding:3px 8px;border:1px solid #a7cbbd;border-radius:999px;background:#f0f8f4;font:600 11px/1.35 'Segoe UI',Arial,sans-serif;vertical-align:middle;color:#356953}
+@media(max-width:480px){.gi-welcome .gi-quick-setup svg[data-family-setup-v1]{height:132px!important;max-height:132px!important}}
+.gi-overview .gi-overview-copy p{margin-bottom:22px}
+.gi-overview .gi-overview-copy p:first-child{margin-bottom:32px}
+.gi-overview .gi-overview-scene svg[data-parent-setup-v1]{width:100%;height:auto;max-height:300px}
