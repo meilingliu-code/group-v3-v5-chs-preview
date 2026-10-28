@@ -28,7 +28,10 @@
     "changes": [
       "Remove the former Setup 2 page: Ensure your baby’s face is clearly lit.",
       "Renumber remaining setup pages 1–3 and connect the computer page directly to the camera examples.",
-      "Remove the deleted page from normal and researcher-review navigation."
+      "Remove the deleted page from normal and researcher-review navigation.",
+      "Restore the quiet-space/lighting page and its original illustration, now titled Find a quiet spot, without Second in the narration.",
+      "Add a calm orientation page immediately before Walkthrough 1 of 6.",
+      "Update Walkthrough 1 wording and simplify the Walkthrough 2 count/Space panel."
     ],
     "preserved": [
       "V1 files and link",
@@ -39,7 +42,41 @@
     ],
     "policy": "Make subsequent edits in V2 until the user explicitly requests another numbered version.",
     "recording": false,
-    "CHSStudyChanged": false
+    "CHSStudyChanged": false,
+    "lastEdited": "2026-10-28",
+    "quietSpot": {
+      "id": "group-guided-room-v3",
+      "title": "Find a quiet spot",
+      "audio": "setup-quiet-spot-evelyn-115-v2-20261028.mp3",
+      "script": "Find a quiet spot. Move toys and other distractions out of view. Turn off extra screens and other sounds. Make sure light comes from the computer side, onto your baby’s face. Avoid a bright window behind your baby, which can make their face hard to see."
+    },
+    "walkthroughPrimer": {
+      "id": "group-guided-walkthrough-primer-v2",
+      "title": "First, a quick walkthrough",
+      "audio": "walkthrough-primer-evelyn-115-v2.mp3",
+      "voice": "NaturalReaders Evelyn Soft, 1.15x (207 WPM)",
+      "script": "First, a quick walkthrough. The next six short steps use illustrations and parent-and-baby videos to show you when to wait, when to press the space bar, and how to pause. Just watch and listen for now. You’ll practice afterward, and your baby can join later. When you’re ready, choose Start the walkthrough."
+    },
+    "walkthroughUpdates": {
+      "updates": [
+        {
+          "id": "group-guided-finish-v3",
+          "file": "walkthrough-1-watch-screen-evelyn-115-20261028.mp3",
+          "title": "1. Watch the screen",
+          "copy": "Wait for the video to finish, then monitor your baby’s attention to the screen.",
+          "caption": "If your baby looks away for 3 seconds, press the space bar.",
+          "script": "One. Watch the screen. Wait for the video to finish, then monitor your baby’s attention to the screen. If your baby looks away for three seconds, press the space bar."
+        },
+        {
+          "id": "group-guided-count-v3",
+          "file": "walkthrough-2-three-seconds-evelyn-115-20261028.mp3",
+          "script": "When the picture is still, if your baby looks away from the screen for three full seconds, press the space bar once. Your baby must keep looking away for all three seconds, without looking back."
+        }
+      ],
+      "existingLessonTimingsUnchanged": true,
+      "lessons3to6Unchanged": true,
+      "spacePressedOnlyAtThree": true
+    }
   },
   "sourceV0Commit": "2a7d2479696d0aa08760ee764f4df99772148936"
 }
