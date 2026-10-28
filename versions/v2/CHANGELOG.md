@@ -28,3 +28,10 @@
 - At the user’s request, restored the former setup page between computer and camera examples, including its original lamp/computer/seat/window illustration.
 - Title is “Find a quiet spot”; narration and transcript begin “Find a quiet spot” without “Second,” and retain the rest of the prior wording.
 - Setup numbering is again 1–4. V0 and V1 remain frozen and untouched.
+
+## October 28, 2026 — combine walkthrough pages
+
+- Merged former walkthrough pages 1 and 2 into one first page, preserving the approved heading, text, and Evelyn narration.
+- Centered the 1–2–3 count and Space key in the entire sage illustration box; Space presses after three continuous seconds.
+- Removed the standalone count page and its navigation references. Remaining pages are numbered 1–5, and the orientation text/audio now say five steps.
+- Preserved later examples, practice, study movies, V0, V1, CHS, and reference sites.

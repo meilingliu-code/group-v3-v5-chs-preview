@@ -31,7 +31,8 @@
       "Remove the deleted page from normal and researcher-review navigation.",
       "Restore the quiet-space/lighting page and its original illustration, now titled Find a quiet spot, without Second in the narration.",
       "Add a calm orientation page immediately before Walkthrough 1 of 6.",
-      "Update Walkthrough 1 wording and simplify the Walkthrough 2 count/Space panel."
+      "Update Walkthrough 1 wording and simplify the Walkthrough 2 count/Space panel.",
+      "Merge former Walkthrough 1 and 2 into one centered count/Space demonstration; remove the separate count page and renumber five steps."
     ],
     "preserved": [
       "V1 files and link",
@@ -53,9 +54,9 @@
     "walkthroughPrimer": {
       "id": "group-guided-walkthrough-primer-v2",
       "title": "First, a quick walkthrough",
-      "audio": "walkthrough-primer-evelyn-115-v2.mp3",
+      "audio": "walkthrough-primer-five-steps-evelyn-115-v2.mp3",
       "voice": "NaturalReaders Evelyn Soft, 1.15x (207 WPM)",
-      "script": "First, a quick walkthrough. The next six short steps use illustrations and parent-and-baby videos to show you when to wait, when to press the space bar, and how to pause. Just watch and listen for now. You’ll practice afterward, and your baby can join later. When you’re ready, choose Start the walkthrough."
+      "script": "First, a quick walkthrough. The next five short steps use illustrations and parent-and-baby videos to show you when to wait, when to press the space bar, and how to pause. Just watch and listen for now. You’ll practice afterward, and your baby can join later. When you’re ready, choose Start the walkthrough."
     },
     "walkthroughUpdates": {
       "updates": [
@@ -76,6 +77,14 @@
       "existingLessonTimingsUnchanged": true,
       "lessons3to6Unchanged": true,
       "spacePressedOnlyAtThree": true
+    },
+    "mergedWalkthrough": {
+      "mergedInto": "group-guided-finish-v3",
+      "removed": "group-guided-count-v3",
+      "steps": 5,
+      "centeredCountAndSpace": true,
+      "threeContinuousSecondsPreserved": true,
+      "laterLessonsUnchanged": true
     }
   },
   "sourceV0Commit": "2a7d2479696d0aa08760ee764f4df99772148936"
