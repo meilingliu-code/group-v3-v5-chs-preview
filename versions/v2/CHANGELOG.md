@@ -59,3 +59,8 @@
 - Page 2 heading is “Let's see an example” and its lead sentence is “Watch the baby’s eyes and the parent’s hand.”
 - Removed the note beginning “This original clip shows the parent’s role…” from Page 2.
 - Kept all other text, narration, video, animation, timing, navigation, earlier versions, and study content unchanged.
+
+## October 29, 2026 — simplify reset illustration
+
+- Matched the Step 3 count/Space illustration to Step 1: removed extra view/eyes/frozen labels, with count above Space centered beside baby.
+- Preserved Step 3 wording, narration, captions, gaze/reset sequence, and exact timings.

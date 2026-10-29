@@ -49,3 +49,14 @@
 .gi-walkthrough[data-group-frame="group-guided-finish-v3"] .rule-scene-space.is-ready>text,
 .gi-walkthrough[data-group-frame="group-guided-finish-v3"] .rule-scene-space.is-ready>path{transform:translateY(4px)}
 @media(prefers-reduced-motion:reduce){.gi-walkthrough[data-group-frame="group-guided-finish-v3"] .rule-scene-space>*{transition:none}}
+
+/* The illustration's Space key depresses only at three completed seconds. */
+.gi-walkthrough[data-group-frame="group-guided-reset-v3"] .gi-walkthrough-visual{display:grid;place-items:center;max-width:600px;background:#f3f8f5;border-radius:20px}
+.gi-walkthrough[data-group-frame="group-guided-reset-v3"] .rule-lesson-scene{display:block;width:100%;max-width:600px;height:auto;margin-inline:auto}
+.gi-walkthrough[data-group-frame="group-guided-reset-v3"] .rule-scene-space>rect:nth-of-type(2),
+.gi-walkthrough[data-group-frame="group-guided-reset-v3"] .rule-scene-space>text,
+.gi-walkthrough[data-group-frame="group-guided-reset-v3"] .rule-scene-space>path{transition:transform .12s ease-out}
+.gi-walkthrough[data-group-frame="group-guided-reset-v3"] .rule-scene-space.is-ready>rect:nth-of-type(2),
+.gi-walkthrough[data-group-frame="group-guided-reset-v3"] .rule-scene-space.is-ready>text,
+.gi-walkthrough[data-group-frame="group-guided-reset-v3"] .rule-scene-space.is-ready>path{transform:translateY(4px)}
+@media(prefers-reduced-motion:reduce){.gi-walkthrough[data-group-frame="group-guided-reset-v3"] .rule-scene-space>*{transition:none}}
