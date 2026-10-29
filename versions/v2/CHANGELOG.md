@@ -52,3 +52,10 @@
 - Replaced the changing bottom instruction series on “1. Watch the screen” with “If your baby looks away for 3 seconds, press the space bar.”
 - This sentence stays the same on entry, throughout the animation, during pause, and on replay.
 - Preserved narration, baby/count animation, alignment, timing, later pages, V0, and V1.
+
+## October 29, 2026 — simplify first two walkthrough pages
+
+- Page 1 heading is now “Watch the screen,” without “1.”
+- Page 2 heading is “Let's see an example” and its lead sentence is “Watch the baby’s eyes and the parent’s hand.”
+- Removed the note beginning “This original clip shows the parent’s role…” from Page 2.
+- Kept all other text, narration, video, animation, timing, navigation, earlier versions, and study content unchanged.
