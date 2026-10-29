@@ -41,3 +41,8 @@
 - Corrected the combined first walkthrough page: restored the original baby-facing-screen/looking-away animation on the left.
 - Placed the simplified 1–2–3 count above Space on the right, keeping both in the same sage box.
 - Preserved the approved text, Evelyn narration, three-second timing, five-page flow, and all other study content.
+
+## October 29, 2026 — center the right-hand animation
+
+- Centered the count and Space key together horizontally and vertically in the green area beside the baby.
+- Preserved the baby illustration size, gaze animation, narration, wording, timing, and five-page walkthrough. V0 and V1 remain unchanged.

@@ -15,7 +15,8 @@
     "Add a calm orientation page immediately before Walkthrough 1 of 6.",
     "Update Walkthrough 1 wording and simplify the Walkthrough 2 count/Space panel.",
     "Merge former Walkthrough 1 and 2 into one centered count/Space demonstration; remove the separate count page and renumber five steps.",
-    "Restore the original baby-looking animation on the left of Walkthrough 1, with the simplified count and Space panel on the right."
+    "Restore the original baby-looking animation on the left of Walkthrough 1, with the simplified count and Space panel on the right.",
+    "Center the 1–2–3 count and Space key together within the green area to the right of the baby animation."
   ],
   "preserved": [
     "V1 files and link",
@@ -27,7 +28,7 @@
   "policy": "Make subsequent edits in V2 until the user explicitly requests another numbered version.",
   "recording": false,
   "CHSStudyChanged": false,
-  "lastEdited": "2026-10-28",
+  "lastEdited": "2026-10-29",
   "quietSpot": {
     "id": "group-guided-room-v3",
     "title": "Find a quiet spot",
@@ -67,6 +68,7 @@
     "steps": 5,
     "babyAnimationOnLeft": true,
     "countAndSpaceOnRight": true,
+    "countAndSpaceCenteredInRightArea": true,
     "threeContinuousSecondsPreserved": true,
     "laterLessonsUnchanged": true
   }

@@ -40,7 +40,7 @@
 @media(max-width:600px){.gi-walkthrough-primer .gi-primer-summary{padding:22px 20px}.gi-walkthrough-primer .gi-primer-lede{font-size:18px}.gi-walkthrough-primer .gi-primer-topics{font-size:19px}.gi-walkthrough-primer .gi-primer-reassure{font-size:17px}}
 
 /* The illustration's Space key depresses only at three completed seconds. */
-.gi-walkthrough[data-group-frame="group-guided-finish-v3"] .gi-walkthrough-visual{display:grid;place-items:center;background:#f3f8f5;border-radius:20px}
+.gi-walkthrough[data-group-frame="group-guided-finish-v3"] .gi-walkthrough-visual{display:grid;place-items:center;max-width:600px;background:#f3f8f5;border-radius:20px}
 .gi-walkthrough[data-group-frame="group-guided-finish-v3"] .rule-lesson-scene{display:block;width:100%;max-width:600px;height:auto;margin-inline:auto}
 .gi-walkthrough[data-group-frame="group-guided-finish-v3"] .rule-scene-space>rect:nth-of-type(2),
 .gi-walkthrough[data-group-frame="group-guided-finish-v3"] .rule-scene-space>text,
