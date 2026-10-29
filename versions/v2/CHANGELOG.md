@@ -60,6 +60,11 @@
 - Removed the note beginning “This original clip shows the parent’s role…” from Page 2.
 - Kept all other text, narration, video, animation, timing, navigation, earlier versions, and study content unchanged.
 
+## October 29, 2026 — slower reset teaching example
+
+- Slowed Step 3’s illustrated count to three seconds per displayed count, with longer 4–7 second holds for reading and the look-back reset explanation.
+- Added a clear slowed-example note; actual study counts and timing remain unchanged.
+
 ## October 29, 2026 — simplify reset illustration
 
 - Matched the Step 3 count/Space illustration to Step 1: removed extra view/eyes/frozen labels, with count above Space centered beside baby.
