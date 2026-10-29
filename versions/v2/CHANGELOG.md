@@ -46,3 +46,9 @@
 
 - Centered the count and Space key together horizontally and vertically in the green area beside the baby.
 - Preserved the baby illustration size, gaze animation, narration, wording, timing, and five-page walkthrough. V0 and V1 remain unchanged.
+
+## October 29, 2026 — fixed first walkthrough instruction
+
+- Replaced the changing bottom instruction series on “1. Watch the screen” with “If your baby looks away for 3 seconds, press the space bar.”
+- This sentence stays the same on entry, throughout the animation, during pause, and on replay.
+- Preserved narration, baby/count animation, alignment, timing, later pages, V0, and V1.

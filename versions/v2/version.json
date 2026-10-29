@@ -16,7 +16,8 @@
     "Update Walkthrough 1 wording and simplify the Walkthrough 2 count/Space panel.",
     "Merge former Walkthrough 1 and 2 into one centered count/Space demonstration; remove the separate count page and renumber five steps.",
     "Restore the original baby-looking animation on the left of Walkthrough 1, with the simplified count and Space panel on the right.",
-    "Center the 1–2–3 count and Space key together within the green area to the right of the baby animation."
+    "Center the 1–2–3 count and Space key together within the green area to the right of the baby animation.",
+    "Replace the changing bottom captions on Walkthrough 1 with the single fixed sentence: If your baby looks away for 3 seconds, press the space bar."
   ],
   "preserved": [
     "V1 files and link",
@@ -69,6 +70,7 @@
     "babyAnimationOnLeft": true,
     "countAndSpaceOnRight": true,
     "countAndSpaceCenteredInRightArea": true,
+    "firstPageStaticCaption": "If your baby looks away for 3 seconds, press the space bar.",
     "threeContinuousSecondsPreserved": true,
     "laterLessonsUnchanged": true
   }
