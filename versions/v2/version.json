@@ -14,7 +14,8 @@
     "Restore the quiet-space/lighting page and its original illustration, now titled Find a quiet spot, without Second in the narration.",
     "Add a calm orientation page immediately before Walkthrough 1 of 6.",
     "Update Walkthrough 1 wording and simplify the Walkthrough 2 count/Space panel.",
-    "Merge former Walkthrough 1 and 2 into one centered count/Space demonstration; remove the separate count page and renumber five steps."
+    "Merge former Walkthrough 1 and 2 into one centered count/Space demonstration; remove the separate count page and renumber five steps.",
+    "Restore the original baby-looking animation on the left of Walkthrough 1, with the simplified count and Space panel on the right."
   ],
   "preserved": [
     "V1 files and link",
@@ -64,7 +65,8 @@
     "mergedInto": "group-guided-finish-v3",
     "removed": "group-guided-count-v3",
     "steps": 5,
-    "centeredCountAndSpace": true,
+    "babyAnimationOnLeft": true,
+    "countAndSpaceOnRight": true,
     "threeContinuousSecondsPreserved": true,
     "laterLessonsUnchanged": true
   }

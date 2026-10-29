@@ -35,3 +35,9 @@
 - Centered the 1–2–3 count and Space key in the entire sage illustration box; Space presses after three continuous seconds.
 - Removed the standalone count page and its navigation references. Remaining pages are numbered 1–5, and the orientation text/audio now say five steps.
 - Preserved later examples, practice, study movies, V0, V1, CHS, and reference sites.
+
+## October 28, 2026 — restore baby animation beside count
+
+- Corrected the combined first walkthrough page: restored the original baby-facing-screen/looking-away animation on the left.
+- Placed the simplified 1–2–3 count above Space on the right, keeping both in the same sage box.
+- Preserved the approved text, Evelyn narration, three-second timing, five-page flow, and all other study content.
