@@ -8,3 +8,5 @@
 - Replaced the dense real-baby practice introduction with a sage card and three short instructions matching the walkthrough introduction.
 - Combined both real-parent clips on one walkthrough page, playing consecutively, and updated the four-step Evelyn 1.15× primer.
 - Shortened the initial watching intervals in illustrated walkthroughs and practice while preserving the three-second look-away count.
+
+- Cleaned V3 illustration cues: centered text, separated count and key prompts, bold pause instruction, and balanced two-line practice cue. All movie and practice timing is preserved.

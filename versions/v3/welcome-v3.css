@@ -69,3 +69,7 @@
 /* Match the walkthrough: white page around one pale green illustration panel. */
 .gi-ui.gi-feedback-check{max-width:none;margin:0;padding:0;background:transparent;border-radius:0}
 .gi-ui.gi-feedback-check .gi-practice-player{display:block;width:100%;max-width:600px;max-height:none!important;aspect-ratio:600/284;height:auto;object-fit:contain;margin:0 auto 10px;border-radius:20px;background:#f3f8f5!important}
+
+/* Consistent panel proportions and centered SVG labels. */
+.rule-clean-cue text{font-family:"Segoe UI",Arial,sans-serif}
+.gi-ui.gi-feedback-check .gi-practice-player{aspect-ratio:1080/560}
