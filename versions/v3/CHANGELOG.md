@@ -6,3 +6,5 @@
 
 - Simplified the illustrated practice visual and lengthened reading intervals. The final look-away interval remains three real seconds; practice scoring now matches the revised movie timeline.
 - Replaced the dense real-baby practice introduction with a sage card and three short instructions matching the walkthrough introduction.
+- Combined both real-parent clips on one walkthrough page, playing consecutively, and updated the four-step Evelyn 1.15× primer.
+- Shortened the initial watching intervals in illustrated walkthroughs and practice while preserving the three-second look-away count.
