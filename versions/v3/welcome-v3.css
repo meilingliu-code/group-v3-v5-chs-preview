@@ -65,3 +65,6 @@
 
 .gi-walkthrough[data-group-frame="group-guided-break-v3"] .gi-walkthrough-visual{max-width:600px}
 .gi-walkthrough[data-group-frame="group-guided-break-v3"] .rule-lesson-scene{max-width:600px}
+
+/* Practice page: match the pause walkthrough card and center the still-picture cue. */
+.gi-ui.gi-feedback-check{max-width:980px;margin:0 auto;padding:28px 36px;background:#f0f7f3;border-radius:20px}.gi-ui.gi-feedback-check .gi-walkthrough-visual{display:grid;place-items:center;align-self:center;width:100%;min-height:220px}.gi-ui.gi-feedback-check .gi-walkthrough-visual svg{display:block;margin:0 auto;max-width:100%}.gi-ui.gi-feedback-check .gi-walkthrough-visual>*{margin-inline:auto}.gi-ui.gi-feedback-check .gi-practice-player{display:block;margin-inline:auto}@media(max-width:720px){.gi-ui.gi-feedback-check{padding:24px 20px;border-radius:20px}}
