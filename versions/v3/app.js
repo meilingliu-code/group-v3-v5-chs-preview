@@ -62,7 +62,7 @@
       if(b.mediaBlock){const m=b.mediaBlock,tag=m.isVideo?'video':'audio';html+='<div class="media-wrapper"><h2>'+esc(m.title)+'</h2><'+tag+' controls playsinline preload="metadata" class="player-media" src="'+esc(m.sources[0].src)+'"></'+tag+'><p>'+esc(m.text)+'</p></div>';}
       return html;
     }).join('');
-    player.innerHTML='<div class="row exp-lookit-instructions"><div class="exp-text">'+blocks+'</div></div><div class="row exp-lookit-instructions"><div class="exp-text">'+(f.showPreviousButton?'<button type="button" class="btn btn-default pull-left" data-back>Previous</button>':'')+'<button type="button" id="nextbutton" class="btn btn-success pull-right">'+esc(f.nextButtonText||'Continue →')+'</button></div></div>';
+    player.innerHTML='<div class="row exp-lookit-instructions instruction-'+esc(id)+'"><div class="exp-text">'+blocks+'</div></div><div class="row exp-lookit-instructions"><div class="exp-text">'+(f.showPreviousButton?'<button type="button" class="btn btn-default pull-left" data-back>Previous</button>':'')+'<button type="button" id="nextbutton" class="btn btn-success pull-right">'+esc(f.nextButtonText||'Continue →')+'</button></div></div>';
     const next=document.querySelector('#nextbutton');
     player.querySelector('[data-back]')?.addEventListener('click',()=>move(-1));
     next.onclick=()=>{
