@@ -24,7 +24,9 @@
     "url": "https://meilingliu-code.github.io/group-v3-v5-chs-preview/versions/v3/",
     "changes": [
       "Remove view/eyes/frozen labels and center P icon and Press P to pause beside baby.",
-      "Remove A quick practice, just for you introduction; continue directly to practice."
+      "Remove A quick practice, just for you introduction; continue directly to practice.",
+      "Simplify illustrated practice movie and lengthen reading intervals while preserving three real seconds away.",
+      "Simplify real-baby practice introduction using the sage walkthrough-card style."
     ],
     "policy": "Continue editing V3 until the user requests the next version.",
     "recording": false

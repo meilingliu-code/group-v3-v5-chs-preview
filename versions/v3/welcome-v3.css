@@ -61,5 +61,7 @@
 .gi-walkthrough[data-group-frame="group-guided-reset-v3"] .rule-scene-space.is-ready>path{transform:translateY(4px)}
 @media(prefers-reduced-motion:reduce){.gi-walkthrough[data-group-frame="group-guided-reset-v3"] .rule-scene-space>*{transition:none}}
 
+.gi-feedback-check .gi-practice-player{max-width:720px;max-height:none;height:auto;margin:0 auto}
+
 .gi-walkthrough[data-group-frame="group-guided-break-v3"] .gi-walkthrough-visual{max-width:600px}
 .gi-walkthrough[data-group-frame="group-guided-break-v3"] .rule-lesson-scene{max-width:600px}
