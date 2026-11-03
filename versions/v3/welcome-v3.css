@@ -73,3 +73,12 @@
 /* Consistent panel proportions and centered SVG labels. */
 .rule-clean-cue text{font-family:"Segoe UI",Arial,sans-serif}
 .gi-ui.gi-feedback-check .gi-practice-player{aspect-ratio:1080/560}
+
+/* Practice uses the same scene, type scale, and spacing as the walkthrough. */
+.gi-practice-layout .gi-practice-visual{position:relative;overflow:hidden;width:100%;max-width:600px;aspect-ratio:600/284;margin:0 auto;border-radius:20px;background:#f4f9f6}
+.gi-ui.gi-practice-layout .gi-practice-visual .gi-practice-player{position:absolute;display:block;left:-10%;top:-2.817%;width:120%;max-width:none;max-height:none!important;height:auto;aspect-ratio:1080/560;object-fit:fill;margin:0;border-radius:0}
+.gi-practice-layout .gi-practice-caption{max-width:700px;margin:18px auto 0;text-align:center;text-wrap:balance}
+.gi-practice-layout .gi-practice-actions{display:flex;justify-content:center;margin:22px auto 12px}
+.gi-practice-layout .gi-practice-actions button{min-height:54px;padding:14px 24px;border:0;border-radius:8px;background:#477b4e;color:#fff;box-shadow:0 7px 16px #34704438;font:700 18px/1.4 'Open Sans',Arial,Helvetica,sans-serif}
+.gi-practice-layout .gi-practice-message{margin:14px auto 0;text-align:center;font:400 17px/1.5 'Open Sans',Arial,Helvetica,sans-serif;color:#61776c}
+.gi-practice-layout .gi-practice-actions button:focus-visible{outline:3px solid #31575f;outline-offset:4px}
