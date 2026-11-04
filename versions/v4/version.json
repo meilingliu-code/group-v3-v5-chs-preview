@@ -1,0 +1,12 @@
+{
+  "version": "V4",
+  "status": "working",
+  "created": "2026-11-04",
+  "sourceV3Commit": "cf09dbfc746234f3b4085adc59fcab6d8f14714d",
+  "url": "https://meilingliu-code.github.io/group-v3-v5-chs-preview/versions/v4/",
+  "changes": [
+    "Remove the attention reminder from the pause illustration; center only the P icon and bold Press P to pause."
+  ],
+  "policy": "Continue editing V4 until the user ends the version or requests a new version.",
+  "recording": false
+}
