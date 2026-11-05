@@ -94,6 +94,8 @@
     return value;
   }
   function movie({training=false}={}){
+    if(training){movieCleanup=window.GroupRealBabyPractice.mount({player,onPrevious:()=>move(-1),onContinue:()=>move(1)});return;}
+
     const params=assignment(),list=frames['group-assignment-block'].frameList;
     const f=training?frames['group-parent-practice-back-v1']:replaceParameters(list[movieIndex],params);
     const source=f.video.source[0].src;
