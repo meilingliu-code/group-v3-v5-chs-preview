@@ -82,3 +82,11 @@
 .gi-practice-layout .gi-practice-actions button{min-height:54px;padding:14px 24px;border:0;border-radius:8px;background:#477b4e;color:#fff;box-shadow:0 7px 16px #34704438;font:700 18px/1.4 'Open Sans',Arial,Helvetica,sans-serif}
 .gi-practice-layout .gi-practice-message{margin:14px auto 0;text-align:center;font:400 17px/1.5 'Open Sans',Arial,Helvetica,sans-serif;color:#61776c}
 .gi-practice-layout .gi-practice-actions button:focus-visible{outline:3px solid #31575f;outline-offset:4px}
+
+/* One comparison teaches lighting and a distraction-free setup together. */
+.gi-environment-frame{overflow:hidden}
+.gi-device-scene .gi-environment-comparison{display:block;width:100%;max-width:none;max-height:none;height:auto;aspect-ratio:auto;object-fit:contain;margin:0;border:0;border-radius:8px 8px 0 0}
+.gi-environment-labels{display:grid;grid-template-columns:1fr 1fr;gap:18px;padding:16px 12px 14px;text-align:center;font:700 18px/1.45 'Open Sans',Arial,Helvetica,sans-serif}
+.gi-environment-avoid{color:#984a40}
+.gi-environment-ready{color:#356953}
+@media(max-width:600px){.gi-environment-labels{gap:12px;padding:12px 6px;font-size:14px}}
