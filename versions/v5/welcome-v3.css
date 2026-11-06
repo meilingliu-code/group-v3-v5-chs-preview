@@ -187,3 +187,7 @@ body:has(.gi-minimal-rule)>.preview-bar,body:has(.gi-minimal-rule)>.preview-foot
 @media(max-width:560px){.gi-glance-grid{gap:8px;}.gi-glance-card{padding:18px 6px;gap:12px;border-radius:14px;}.gi-glance-card strong{font-size:18px;}.gi-glance-icon{height:54px;}.gi-glance-icon svg{height:46px;width:46px;}.gi-glance-icon kbd{font-size:16px;min-width:36px;padding:8px;}}
 
 .gi-ui .gi-glance-card .gi-glance-icon{background:transparent!important;border-radius:0!important;width:72px;max-width:100%;color:#73a58e;box-shadow:none;}
+
+.real-practice-instructions kbd{background:#f8fcf9;border:1px solid #a9c4b8;border-bottom:3px solid #a9c4b8;border-radius:6px;color:#274e40;padding:2px 8px;font:700 17px "Segoe UI",sans-serif;}
+
+.gi-welcome .gi-quick-setup svg[data-parent-setup-v1]{display:block;width:min(100%,380px);height:auto!important;max-height:265px!important;margin:0 auto;}
