@@ -1,0 +1,13 @@
+{
+  "version": "V6",
+  "status": "working",
+  "created": "2026-11-06",
+  "sourceV5Commit": "212b410b6997945ddbd7fb0aab7426d69153f5c1",
+  "url": "https://meilingliu-code.github.io/group-v3-v5-chs-preview/versions/v6/",
+  "changes": [
+    "Removed the First, watch. primer page. Sound check now leads directly to the first animated walkthrough.",
+    "The first animated rule example now has one continuous three-second look away, synchronized to the 1–2–3 count and Space cue."
+  ],
+  "policy": "Continue editing V6 until the user ends this version or requests another version.",
+  "recording": false
+}
