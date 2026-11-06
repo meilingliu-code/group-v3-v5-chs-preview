@@ -17,16 +17,10 @@
   function mount({player, onPrevious, onContinue}) {
     player.innerHTML = `<section class="real-practice-card" tabindex="-1" data-real-practice>
       <nav class="gi-progress" aria-label="Getting ready progress"><span class="complete"><i>✓</i><b>Welcome</b></span><span class="complete"><i>✓</i><b>Get ready</b></span><span class="active" aria-current="step"><i>3</i><b>Parent practice</b></span><span><i>4</i><b>Baby’s turn</b></span></nav>
-      <div class="gi-walkthrough-primer real-practice-instructions">
-        <div class="gi-primer-summary">
-          <p class="gi-primer-lede">In the next video, you’ll watch from behind the baby.</p>
-          <ul class="gi-primer-topics">
-            <li>Monitor the baby’s attention to the screen.</li>
-            <li>Press <kbd>Space</kbd> after <strong>3 full seconds</strong> looking away.</li>
-            <li>If baby looks back, start counting again.</li>
-          </ul>
-        </div>
-      </div>
+      <div class="gi-walkthrough-primer real-practice-instructions"><div class="gi-primer-summary"><aside class="gi-practice-guide" aria-label="Practice steps">
+<svg class="gi-practice-eye" viewBox="0 0 64 64" aria-hidden="true"><path d="M5 32Q32 3 59 32Q32 61 5 32Z" fill="none" stroke="currentColor" stroke-width="4"/><circle cx="32" cy="32" r="10" fill="none" stroke="currentColor" stroke-width="4"/></svg>
+<ol><li><strong>Baby looks away</strong></li><li><strong>Count 3 seconds</strong></li><li><strong>Press <kbd>Space</kbd></strong></li></ol>
+<p><strong>Looks back at the screen?</strong><br>Start again.</p></aside></div></div>
       <div class="real-practice-stage"><video playsinline preload="metadata" aria-label="Original real-baby practice video" src="${timing.source}"></video></div>
       <div class="real-practice-controls"><button type="button" data-real-start>Start practice</button><button type="button" data-real-pause disabled>Pause · P</button></div>
       <p class="real-practice-status" data-real-status role="status" aria-live="polite">Your baby can join later.</p>
