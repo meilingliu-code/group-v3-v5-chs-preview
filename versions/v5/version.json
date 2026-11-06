@@ -1,0 +1,13 @@
+{
+  "version": "V5",
+  "status": "working",
+  "created": "2026-11-06",
+  "sourceV4Commit": "1c0dfeace80d403ab875ce95e9fcd80414c4fa69",
+  "url": "https://meilingliu-code.github.io/group-v3-v5-chs-preview/versions/v5/",
+  "changes": [
+    "Restore the six-second opening before the first head turn in the two illustrated walkthroughs.",
+    "Restore illustrated practice playback to source time 4 seconds instead of 7 seconds; gaze events, three-second count and response scoring remain unchanged."
+  ],
+  "policy": "Continue editing V5 until the user ends the version or requests a new version.",
+  "recording": false
+}
