@@ -163,3 +163,27 @@
 .camera-check-navigation{display:flex;justify-content:space-between;gap:16px;align-items:center;border-top:1px solid #e2eae6;margin-top:26px;padding-top:20px}
 .camera-check-card [data-camera-back]{background:transparent;border:0;padding-left:0}
 @media(max-width:700px){.camera-check-card{padding:24px 20px}.camera-check-layout{grid-template-columns:1fr}.camera-check-tips{padding:18px}.camera-check-tips ul{gap:10px;font-size:16px}}
+
+/* V5 single-rule walkthrough. Controls remain available below the illustration. */
+.gi-minimal-rule .gi-heading{max-width:100%;margin:0 auto 22px;}
+.gi-minimal-rule .gi-heading h1{font-size:clamp(24px,3vw,34px);line-height:1.4;max-width:100%;margin:0;text-align:center;text-wrap:balance;}
+.gi-minimal-rule .gi-rule-hidden-caption{display:none!important;}
+body:has(.gi-minimal-rule)>.preview-bar,body:has(.gi-minimal-rule)>.preview-footer{display:none;}
+
+/* V5 instructions at a glance. Full narration stays in the transcript. */
+.gi-glance-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:12px auto 24px;max-width:850px;}
+.gi-glance-card{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:22px 12px;background:#f0f8f4;border:1px solid #c9dfd4;border-radius:20px;text-align:center;}
+.gi-glance-card strong{font-size:clamp(20px,2.6vw,28px);line-height:1.25;color:#355b4c;}
+.gi-glance-icon{height:70px;display:flex;align-items:center;justify-content:center;color:#73a58e;}
+.gi-glance-icon svg{height:64px;width:64px;}
+.gi-glance-icon kbd{font-size:22px;min-width:54px;text-align:center;padding:12px;}
+.gi-sign-lede{font-size:clamp(20px,2.3vw,26px)!important;text-align:center;margin:22px auto!important;line-height:1.4!important;}
+.gi-overview-copy.gi-glance-overview{padding:18px!important;}
+.gi-glance-overview .gi-glance-grid{gap:10px;margin-bottom:14px;}
+.gi-glance-overview .gi-glance-card{padding:20px 8px;}
+.gi-glance-primer{padding:18px!important;}
+.gi-glance-primer .gi-glance-grid{margin-bottom:12px;}
+.gi-reset-answer strong{font-weight:800;color:#2d5143;}
+@media(max-width:560px){.gi-glance-grid{gap:8px;}.gi-glance-card{padding:18px 6px;gap:12px;border-radius:14px;}.gi-glance-card strong{font-size:18px;}.gi-glance-icon{height:54px;}.gi-glance-icon svg{height:46px;width:46px;}.gi-glance-icon kbd{font-size:16px;min-width:36px;padding:8px;}}
+
+.gi-ui .gi-glance-card .gi-glance-icon{background:transparent!important;border-radius:0!important;width:72px;max-width:100%;color:#73a58e;box-shadow:none;}
