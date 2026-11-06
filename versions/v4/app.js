@@ -1,6 +1,7 @@
 'use strict';
 // Standalone rendering adapter for the saved CHS content. No CHS APIs, child
 // profiles, recording, consent submission, uploads, or response storage run here.
+// The camera check offers opt-in local preview only.
 (() => {
   const protocol=window.GROUP_CHS_SOURCE;
   const player=document.querySelector('#experiment-player');
@@ -17,17 +18,28 @@
   const human=id=>id.replace(/^group-guided-|^group-/g,'').replace(/-v\d$/,'').replaceAll('-',' ');
   const titleFor=(id,f)=>({
     'group-parent-practice-back-v1':'Original real-baby practice',
-    'group-parent-webcam-check-v1':'Live camera check · reference',
+    'group-parent-webcam-check-v1':'Live camera check',
     'group-assignment-block':'GROUP study movies',
     'group-start-recording-v1':'Start recording · disabled in this copy',
     'group-stop-recording-v1':'Stop recording · disabled in this copy',
     'group-upload-complete-v1':'Upload confirmation · reference',
-    'video-config':'Webcam setup · reference',
+    'video-config':'Camera setup',
     'video-consent':'Consent document · reference',
     'exit-survey':'Thank you and debrief'
   })[id]||f.blocks?.map(b=>b.title||b.text?.match(/<h1[^>]*>(.*?)<\/h1>/)?.[1]||'').find(Boolean)||human(id);
   order.forEach((id,i)=>{const o=document.createElement('option');o.value=String(i);o.textContent=`${i+1}. ${titleFor(id,frames[id]).replace(/<[^>]*>/g,'')}`;picker.append(o);});
   picker.onchange=()=>show(Number(picker.value));
+// Persistent review-only navigation; intentionally does not alter practice scores.
+  const researcherPanel=document.querySelector('#preview-researcher-skips');
+  const researcherPicker=document.querySelector('#researcher-page-picker');
+  const researcherNext=document.querySelector('#researcher-skip-next');
+  order.forEach((id,i)=>{const option=document.createElement('option');option.value=String(i);option.textContent=`${i+1}. ${titleFor(id,frames[id]).replace(/<[^>]*>/g,'')}`;researcherPicker.append(option);});
+  function syncResearcherNavigation(){researcherPicker.value=String(index);researcherNext.textContent=index===order.length-1?'Back to welcome →':'Skip this page →';}
+  function researchJump(position){researcherPanel.open=false;show(position);researcherPanel.querySelector('summary').focus({preventScroll:true});}
+  researcherPicker.onchange=()=>researchJump(Number(researcherPicker.value));
+  researcherNext.onclick=()=>researchJump(index===order.length-1?0:index+1);
+  for(const type of ['keydown','keyup'])document.addEventListener(type,event=>{if(researcherPanel.contains(event.target))event.stopImmediatePropagation();},true);
+
   const assignment=()=>frames['group-assignment-block'].parameterSets.find(p=>p.ASSIGNMENT_ID===condition.value);
   function updateConditions(){
     condition.replaceChildren();
@@ -83,10 +95,7 @@
     const paragraphs=[['Why we are running this study',c.purpose],['What happens during this study',c.procedures],['What are the risks?',c.risk_statement],['What are the benefits?',c.payment],['How we use recordings',c.datause],['Questions about research rights',c.research_rights_statement],['Study team contact',c.PIContact]];
     reference('CHS consent document · read-only reference','<div class="preview-only"><strong>No consent is collected here.</strong>This is the source study’s text for collaborator review. Do not use this public preview to enroll a family.</div>'+paragraphs.map(([h,t])=>'<h2>'+esc(h)+'</h2><p>'+esc(t)+'</p>').join(''),'Continue to debrief →');
   }
-  function cameraReference(id,f){
-    const title=id==='video-config'?'CHS webcam setup · reference':'Check your baby’s real camera view.';
-    reference(title,'<div class="preview-only"><strong>Camera off · Not recording</strong>This standalone copy shows the instructions, but does not access a webcam or microphone. The live feed and technical checks remain in the original CHS study.</div><div class="camera-placeholder">No camera feed in the GitHub review copy.</div>'+(f.blocks||[]).map(b=>'<h2>'+esc(b.title||'')+'</h2><p>'+esc(b.text||'')+'</p>').join('')+'<ul><li>Keep baby’s whole head, face and both eyes visible.</li><li>Use even light from in front.</li><li>Sit above and behind your baby, where you can monitor your baby’s attention to the screen and reach Space.</li><li>Keep the keyboard out of your baby’s reach.</li></ul>','Continue review →');
-  }
+  function cameraReference(id,f){movieCleanup=window.GroupCameraPreview.mount({player,onPrevious:()=>move(-1),onContinue:()=>move(1)});}
   function replaceParameters(value,params){
     if(typeof value==='string'&&Object.prototype.hasOwnProperty.call(params,value))return structuredClone(params[value]);
     if(Array.isArray(value))return value.map(x=>replaceParameters(x,params));
@@ -100,18 +109,19 @@
     const f=training?frames['group-parent-practice-back-v1']:replaceParameters(list[movieIndex],params);
     const source=f.video.source[0].src;
     const controlled=f.kind==='exp-lookit-video-infant-control';
+    const attentionPrelude=/^group-(attention-|calibration-v4)/.test(f.id||'');
     const delay=Number(f.measurementPeriodDelay||0),ceiling=Number(f.requiredDuration||60);
     const token=generation;
-    player.innerHTML='<section class="movie-card"><h1>'+esc(training?'Original real-baby practice':params.ASSIGNMENT_ID+' · Movie '+(movieIndex+1)+' of '+list.length)+'</h1><p class="movie-meta">Review only · No camera recording or participant response is saved</p>'+(f.parentTextBlock?'<p class="movie-hint">'+esc(f.parentTextBlock.text)+'</p>':'')+'<div class="movie-stage"><video playsinline preload="metadata" aria-label="'+esc(training?'Original parent practice video':'GROUP V3/V5 study movie')+'" src="'+esc(source)+'"></video><div class="movie-overlay"><div><h2>Ready to review?</h2><button type="button" data-play>Play movie</button></div></div></div><p class="movie-status" role="status">Choose Play movie.</p><p class="movie-hint">'+(controlled?'Wait for the action to finish. Once the picture is still, count 3 full seconds continuously away, then press Space. A look back means start again.':'This movie moves on automatically in the CHS study.')+' Press P for a break; continuing restarts this movie.</p><div class="movie-actions"><button type="button" data-replay>↻ Replay</button><button type="button" data-pause>Pause / restart · P</button><button type="button" data-previous>← Previous movie</button><button type="button" data-next-movie>Next movie →</button><button type="button" data-finish>Continue beyond movies</button></div><details class="movie-source"><summary>Source movie</summary><a target="_blank" rel="noopener" href="'+esc(source)+'">'+esc(source)+'</a></details></section>';
+    player.innerHTML='<section class="movie-card">'+(f.parentTextBlock?'<p class="movie-hint">'+esc(f.parentTextBlock.text)+'</p>':'')+'<div class="movie-stage"><video playsinline preload="metadata" aria-label="'+esc(training?'Original parent practice video':'GROUP V3/V5 study movie')+'" src="'+esc(source)+'"></video><div class="movie-overlay"><div><h2>Ready to review?</h2><button type="button" data-play>Play movie</button></div></div></div><p class="movie-status" role="status">Choose Play movie.</p><p class="movie-hint">'+(controlled?'Wait for the action to finish. Once the picture is still, count 3 full seconds continuously away, then press Space. A look back means start again.':'This movie moves on automatically in the CHS study.')+' Press P for a break; continuing restarts this movie.</p><div class="movie-actions"><button type="button" data-replay>↻ Replay</button><button type="button" data-pause>Pause / restart · P</button><button type="button" data-previous>← Previous movie</button><button type="button" data-next-movie>Next movie →</button><button type="button" data-finish>Continue beyond movies</button></div><details class="movie-source"><summary>Source movie</summary><a target="_blank" rel="noopener" href="'+esc(source)+'">'+esc(source)+'</a></details></section>';
     const video=player.querySelector('video'),overlay=player.querySelector('.movie-overlay'),status=player.querySelector('.movie-status');
     let running=false,paused=false,timer=null,ended=false,wallStart=0;
     function play(){clearTimeout(timer);ended=false;paused=false;video.currentTime=0;overlay.hidden=true;status.textContent='Movie playing. Wait for the still picture.';running=true;wallStart=performance.now();video.play().catch(()=>{running=false;overlay.hidden=false;status.textContent='The movie could not play. Try Play movie again.';});if(training)timer=setTimeout(()=>finish('Practice reference complete.'),ceiling*1000);}
     function finish(message){if(ended)return;ended=true;running=false;clearTimeout(timer);video.pause();status.textContent=message||'Review movie complete.';overlay.hidden=false;overlay.querySelector('div').innerHTML='<h2>'+esc(status.textContent)+'</h2><button type="button" data-continue>'+esc(training?'Continue review':'Next movie →')+'</button><button type="button" data-restart>Replay this movie</button>';overlay.querySelector('[data-continue]').onclick=()=>{if(training)move(1);else nextMovie();};overlay.querySelector('[data-restart]').onclick=play;}
-    function nextMovie(){movieIndex++;if(movieIndex>=list.length){movieIndex=0;move(1);}else show(index);}
+    function nextMovie(autoPlay=false){movieIndex++;if(movieIndex>=list.length){movieIndex=0;move(1);}else{show(index);if(autoPlay)player.querySelector('[data-play]')?.click();}}
     function pause(){if(!running&&!paused)return;running=false;paused=true;clearTimeout(timer);video.pause();status.textContent='Paused. Continuing restarts this movie from the beginning.';overlay.hidden=false;overlay.querySelector('div').innerHTML='<h2>Movie paused</h2><button type="button" data-resume>Restart movie</button>';overlay.querySelector('[data-resume]').onclick=play;}
     video.onloadedmetadata=()=>{if(!Number.isFinite(video.duration))return;if(controlled&&!training&&video.duration+.4<delay)status.textContent='The source video is shorter than the configured motion period. Please report this.';};
     video.ontimeupdate=()=>{if(!running||training)return;if(controlled&&video.currentTime>=delay){status.textContent='The picture is still. Monitor your baby’s attention to the screen; count 3 full seconds away.';}else status.textContent='Movie playing. Wait for the still picture.';};
-    video.onended=()=>{if(!running)return;if(!controlled){finish('Movie finished.');timer=setTimeout(()=>{if(generation===token)nextMovie();},600);}else if(training){finish('Original practice video finished.');}else{status.textContent='The picture is still. Monitor your baby’s attention to the screen. Press Space after 3 full seconds away.';timer=setTimeout(()=>finish('This review trial reached its CHS time limit.'),Math.max(0,ceiling-delay)*1000);}};
+    video.onended=()=>{if(!running)return;if(!controlled){finish('Movie finished.');timer=setTimeout(()=>{if(generation===token)nextMovie(attentionPrelude);},600);}else if(training){finish('Original practice video finished.');}else{status.textContent='The picture is still. Monitor your baby’s attention to the screen. Press Space after 3 full seconds away.';timer=setTimeout(()=>finish('This review trial reached its CHS time limit.'),Math.max(0,ceiling-delay)*1000);}};
     video.onerror=()=>{running=false;status.textContent='This source movie could not load. Check your connection or choose another movie.';};
     function key(e){if(/^(INPUT|SELECT|TEXTAREA)$/.test(e.target.tagName)||e.repeat)return;if((e.code==='Space'||e.key===' ')&&controlled&&running){e.preventDefault();if(training||video.currentTime>=delay)finish('Space pressed · review response not saved.');else status.textContent='Not yet—wait for the action to finish first.';}else if(e.key.toLowerCase()==='p'){e.preventDefault();if(paused)play();else pause();}}
     function visibility(){if(document.hidden)pause();}
@@ -126,7 +136,7 @@
   }
   function show(position){
     generation++;movieCleanup();movieCleanup=()=>{};stopMedia();
-    index=position;picker.value=String(index);const id=order[index],f=frames[id];
+    index=position;picker.value=String(index);syncResearcherNavigation();const id=order[index],f=frames[id];
     try{
       if(id==='group-cover-welcome-v1'){initializeShared();instruction(id,f);}
       else if(id==='group-upload-complete-v1')reference('Upload confirmation · reference only','<div class="preview-only"><strong>No recording or upload took place.</strong>This copy must not show a successful upload confirmation. In CHS, the next screen checks the real upload result.</div><p>The source study shows “Your video uploaded” only after CHS reports a completed upload. Otherwise, it asks the family to contact the study team.</p>','Review webcam setup and consent →');

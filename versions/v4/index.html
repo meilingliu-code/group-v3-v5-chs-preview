@@ -4,18 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex,nofollow">
-  <meta name="description" content="Standalone, read-only preview of the GROUP V3/V5 CHS study. No camera, recording, consent submission or participant data collection.">
+  <meta name="description" content="Standalone, read-only preview of the GROUP V3/V5 CHS study. Optional local camera preview. No recording, consent submission or participant data collection.">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; media-src 'self' https: blob:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
   <title>GROUP V3/V5 — V4 working preview</title>
   <link rel="stylesheet" href="preview.css">
-  <link rel="stylesheet" href="welcome-v3.css?v=v4-real-feedback-20261104">
-  <script defer src="protocol.js?v=v4-seconds-labels-20261105"></script>
+  <link rel="stylesheet" href="welcome-v3.css?v=v4-universal-skips-20261105">
+  <script defer src="protocol.js?v=v4-universal-skips-20261105"></script>
   <script defer src="real-baby-practice.js?v=v4-real-feedback-20261104"></script>
-  <script defer src="app.js?v=v4-real-feedback-20261104"></script>
+  <script defer src="camera-preview.js?v=v4-local-camera-20261105"></script>
+  <script defer src="app.js?v=v4-universal-skips-20261105"></script>
 </head>
 <body>
   <header class="preview-bar">
-    <div><strong>GROUP V3/V5 · CHS content preview</strong><span class="version-badge">V4 · Working version</span><small>Review only · Camera and recording off · No participant responses saved</small></div>
+    <div><strong>GROUP V3/V5 · CHS content preview</strong><span class="version-badge">V4 · Working version</span><small>Review only · Recording off · No participant responses saved</small></div>
     <details class="preview-navigation"><summary>Review navigation</summary><div>
       <label>Review a page <select id="page-picker"></select></label>
       <label>Movie version <select id="version-picker"><option value="V3">V3 · three per group</option><option value="V5">V5 · five per group</option></select></label>
@@ -29,8 +30,9 @@
       <a href="https://c-steele.github.io/group-lookit/?rev=guided-walkthrough-20261003" target="_blank" rel="noopener">Original reference template</a>
     </div></details>
   </header>
+  <aside class="preview-researcher-bar" aria-label="Researcher preview tools"><details id="preview-researcher-skips" class="preview-researcher-skips"><summary>Researcher skips</summary><div><button type="button" id="researcher-skip-next">Skip this page →</button><label>Jump to page <select id="researcher-page-picker"></select></label><p>Preview only. Skips do not mark practice passed.</p></div></details></aside>
   <main id="experiment-player" aria-live="off"></main>
   <footer class="preview-footer">V4 · Editing in progress. V0, V1, V2, V3, and both original reference links are preserved. This is not a live study or a recording/upload test.</footer>
-  <noscript>This preview needs JavaScript. Camera access and study recording are never used.</noscript>
+  <noscript>This preview needs JavaScript. Camera preview is optional; recording and uploads are disabled.</noscript>
 </body>
 </html>

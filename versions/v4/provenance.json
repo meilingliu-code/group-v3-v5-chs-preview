@@ -7,12 +7,12 @@
   "originalReference": "https://c-steele.github.io/group-lookit/?rev=guided-walkthrough-20261003",
   "referenceCommit": "bd506e2cd347418670a146b54acf002518297a26",
   "recording": false,
-  "cameraAccess": false,
+  "cameraAccess": true,
   "consentSubmission": false,
   "participantResponseStorage": false,
   "notes": [
     "Original CHS protocol restored, not modified by this export.",
-    "CHS-only camera, consent and recording screens are read-only references.",
+    "Camera check is an opt-in local preview. CHS consent, recording and upload screens remain references.",
     "Parent instructions and Evelyn audio use the original CHS content.",
     "32 review counterbalances, 37 source delivery entries each. Review selection is not participant random assignment."
   ],
@@ -29,5 +29,13 @@
     "recording": false
   },
   "sourceV0Commit": "2a7d2479696d0aa08760ee764f4df99772148936",
-  "sourceV3Commit": "cf09dbfc746234f3b4085adc59fcab6d8f14714d"
+  "sourceV3Commit": "cf09dbfc746234f3b4085adc59fcab6d8f14714d",
+  "cameraPreview": {
+    "recording": false,
+    "audio": false,
+    "uploads": false,
+    "source": "https://lookit.readthedocs.io/projects/frameplayer/en/latest/components/exp-lookit-webcam-display/doc.html",
+    "implementation": "Standalone browser adaptation; does not embed the CHS recorder or session service.",
+    "activation": "Only after the participant clicks Enable camera and allows browser access."
+  }
 }
