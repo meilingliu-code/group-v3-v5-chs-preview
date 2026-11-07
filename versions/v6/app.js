@@ -10,7 +10,7 @@
   const condition=document.querySelector('#condition-picker');
   const frames=protocol.frames;
   const sourceOrder=protocol.sequence.slice();
-  const platformIds=['video-config','video-consent'];
+  const platformIds=['video-config'];
   const order=sourceOrder.filter(id=>!platformIds.includes(id));
   order.splice(order.indexOf('exit-survey'),0,...platformIds);
   let index=0,movieIndex=0,movieCleanup=()=>{},generation=0;
