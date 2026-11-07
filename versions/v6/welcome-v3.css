@@ -222,3 +222,5 @@ body:has(.gi-minimal-rule)>.preview-bar,body:has(.gi-minimal-rule)>.preview-foot
 .real-practice-instructions .gi-practice-guide li{font-size:19px;line-height:1.3;gap:10px;}
 .real-practice-instructions .gi-practice-guide li:before{flex-basis:26px;height:26px;font-size:16px;}
 .real-practice-instructions .gi-practice-guide p{font-size:15px;line-height:1.35;margin:12px 0 0;padding-top:10px;}
+
+.real-practice-instructions .gi-practice-guide ol{width:fit-content;max-width:100%;margin:0 auto;}
