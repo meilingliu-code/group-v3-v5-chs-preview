@@ -215,7 +215,7 @@ body:has(.gi-minimal-rule)>.preview-bar,body:has(.gi-minimal-rule)>.preview-foot
 .real-practice-instructions .gi-practice-guide p{font-size:17px;line-height:1.5;margin:22px 0 0;padding-top:16px;border-top:1px solid #d3e5d9;text-align:center;text-wrap:balance;}
 
 /* Compact reminder above the real-baby practice video. */
-.real-practice-card .real-practice-instructions .gi-primer-summary{width:min(100%,460px);padding:14px 18px;margin:8px auto 12px;border-radius:18px;}
+.real-practice-card .real-practice-instructions .gi-primer-summary{width:min(100%,460px);padding:14px 18px;margin:18px auto 4px;border-radius:18px;}
 .real-practice-instructions .gi-practice-guide{max-width:330px;padding:0;}
 .real-practice-instructions .gi-practice-eye{width:36px;height:36px;margin:0 auto 10px;}
 .real-practice-instructions .gi-practice-guide ol{gap:8px;}
@@ -228,8 +228,6 @@ body:has(.gi-minimal-rule)>.preview-bar,body:has(.gi-minimal-rule)>.preview-foot
 /* V7 parent view: review tools and narration controls are researcher-only. */
 :root:not(.researcher-view) .preview-bar,
 :root:not(.researcher-view) .preview-footer,
-:root:not(.researcher-view) .preview-researcher-bar,
-:root:not(.researcher-view) .gi-researcher-tools,
 :root:not(.researcher-view) .gi-narration,
 :root:not(.researcher-view) .gi-audio-controls,
 :root:not(.researcher-view) .gi-audio-buttons,
@@ -258,3 +256,7 @@ body:has(.gi-minimal-rule)>.preview-bar,body:has(.gi-minimal-rule)>.preview-foot
 :root:not(.researcher-view) .movie-actions [data-next-movie],
 :root:not(.researcher-view) .movie-actions [data-finish]{display:none!important;}
 .movie-actions{justify-content:center;}
+
+/* Editing tools remain available on every page during V7 review. */
+.preview-researcher-bar{display:flex!important;}
+.gi-counter-slot{width:100%;}

@@ -13,7 +13,10 @@
     "Add a prominent on-video Play/Replay button to the real-parent example.",
     "Add video-timed 1–2–3 counters to illustrated and real-baby practice.",
     "Start real-baby practice at source time 17.8 seconds, about 2 seconds before the authored look away. Keep its 3-second criterion and 2-second response allowance.",
-    "Simplify study-movie bottom controls to Replay and Pause/Continue in parent view. Hide movie-source dropdown and manual review navigation."
+    "Simplify study-movie bottom controls to Replay and Pause/Continue in parent view. Hide movie-source dropdown and manual review navigation.",
+    "Keep counters visible below step 3 on both practice pages; score Space at initial key press and allow two seconds to respond after three full seconds.",
+    "Restore editing researcher skips on every page.",
+    "Match moving-ball introductions across illustrated walkthroughs, retaining still pictures during look-away counts."
   ],
   "recording": false,
   "policy": "Continue editing V7 until the user ends this version or requests another version."

@@ -10,3 +10,9 @@
 - Keep practice scoring and the three-full-second rule unchanged.
 - Shorten real-baby practice lead-in to 2 seconds before the annotated look away.
 - Show only Replay and Pause/Continue below study movies in parent view.
+
+## Counter and editing refinements — 2026-11-11
+- Always-visible counters beneath step 3 on both practice pages.
+- Illustrated practice scores initial Space keydown, with a two-second response allowance after the third full second.
+- Researcher skips restored for ongoing editing.
+- Matching moving-ball introductions; still-picture counting preserved.

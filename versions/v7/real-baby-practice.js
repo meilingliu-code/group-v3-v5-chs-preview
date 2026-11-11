@@ -19,8 +19,8 @@
     player.innerHTML = `<section class="real-practice-card" tabindex="-1" data-real-practice>
       <nav class="gi-progress" aria-label="Getting ready progress"><span class="complete"><i>✓</i><b>Welcome</b></span><span class="complete"><i>✓</i><b>Get ready</b></span><span class="active" aria-current="step"><i>3</i><b>Parent practice</b></span><span><i>4</i><b>Baby’s turn</b></span></nav>
       <div class="gi-walkthrough-primer real-practice-instructions"><div class="gi-primer-summary"><aside class="gi-practice-guide" aria-label="Practice steps">
-<svg class="gi-practice-eye" viewBox="0 0 64 64" aria-hidden="true"><path d="M5 32Q32 3 59 32Q32 61 5 32Z" fill="none" stroke="currentColor" stroke-width="4"/><circle cx="32" cy="32" r="10" fill="none" stroke="currentColor" stroke-width="4"/></svg><div class="gi-counter-slot"><div class="gi-timed-counter" data-practice-counter hidden role="status" aria-live="polite" aria-atomic="true"><span aria-hidden="true">1</span><span aria-hidden="true">2</span><span aria-hidden="true">3</span></div></div>
-<ol><li><strong>Baby looks away</strong></li><li><strong>Count 3 seconds</strong></li><li><strong>Press <kbd>Space</kbd></strong></li></ol>
+<svg class="gi-practice-eye" viewBox="0 0 64 64" aria-hidden="true"><path d="M5 32Q32 3 59 32Q32 61 5 32Z" fill="none" stroke="currentColor" stroke-width="4"/><circle cx="32" cy="32" r="10" fill="none" stroke="currentColor" stroke-width="4"/></svg>
+<ol><li><strong>Baby looks away</strong></li><li><strong>Count 3 seconds</strong></li><li><strong>Press <kbd>Space</kbd></strong></li></ol><div class="gi-counter-slot"><div class="gi-timed-counter" data-practice-counter role="status" aria-live="polite" aria-atomic="true"><span aria-hidden="true">1</span><span aria-hidden="true">2</span><span aria-hidden="true">3</span></div></div>
 <p><strong>Looks back at the screen?</strong><br>Start again.</p></aside></div></div>
       <div class="real-practice-stage"><video playsinline preload="metadata" aria-label="Original real-baby practice video" src="${timing.source}"></video></div>
       <div class="real-practice-controls"><button type="button" data-real-start>Start practice</button><button type="button" data-real-pause disabled>Pause · P</button></div>
@@ -32,12 +32,13 @@
     let running=false,passed=false,dead=false,starting=false,lastTime=0,lastWall=0,watched=0,counterFrame=null;
     const counter=root.querySelector('[data-practice-counter]');
     const counterIntervals=timing.intervals.filter(x=>x.gaze==='away');
+    renderCount();
     function renderCount(){window.GroupPracticeCounter.render(counter,video.currentTime,counterIntervals);}
     function tickCounter(){if(!running||dead)return;renderCount();counterFrame=requestAnimationFrame(tickCounter);}
     function stop(){running=false;cancelAnimationFrame(counterFrame);renderCount();video.pause();pause.disabled=true;}
     function interrupted(message){if(!running&&!starting)return;starting=false;stop();passed=false;next.disabled=true;start.disabled=false;start.textContent='Start again';status.textContent=message;}
     function result(kind){
-      stop();passed=kind==='correct';next.disabled=!passed;start.disabled=false;start.textContent=passed?'Try again (optional)':'Try again';
+      stop();passed=kind==='correct';if(!passed)window.GroupPracticeCounter.render(counter,0,[]);next.disabled=!passed;start.disabled=false;start.textContent=passed?'Try again (optional)':'Try again';
       feedback.hidden=false;feedback.className='real-practice-feedback '+(passed?'is-correct':'is-retry');
       const messages={early:['A little early','Wait for 3 full seconds looking away. If the child looks back, start counting again.'],correct:['You timed it correctly!','That was 3 full seconds looking away. You’re ready to continue.'],late:['A little late','Press Space as soon as you’ve counted 3 full seconds looking away. Let’s try again.']};
       const [title,copy]=messages[kind];feedback.innerHTML='<strong></strong><p></p>';feedback.querySelector('strong').textContent=title;feedback.querySelector('p').textContent=copy;
