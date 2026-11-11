@@ -260,3 +260,7 @@ body:has(.gi-minimal-rule)>.preview-bar,body:has(.gi-minimal-rule)>.preview-foot
 /* Editing tools remain available on every page during V7 review. */
 .preview-researcher-bar{display:flex!important;}
 .gi-counter-slot{width:100%;}
+
+/* Center the three steps between the eye and the elapsed-seconds counter. */
+.gi-static-practice .gi-practice-eye{margin-bottom:9px;}
+.gi-static-practice .gi-counter-slot{margin:17px auto 12px;}
