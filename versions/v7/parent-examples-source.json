@@ -1,0 +1,18 @@
+{
+  "source": "https://osf.io/download/v4npq/",
+  "attribution": "Original parent-training example · Gal Raz and colleagues",
+  "asset": "./assets/original-parent-examples-v5.mp4",
+  "durationSeconds": 27,
+  "encoding": "Original H.264/AAC streams; lossless remux with fast-start metadata",
+  "ranges": [
+    {
+      "start": 19.5,
+      "end": 26
+    },
+    {
+      "start": 6,
+      "end": 10
+    }
+  ],
+  "purpose": "Walkthrough demonstration only. Scored practice video and gaze timings are unchanged."
+}

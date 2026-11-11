@@ -1,0 +1,52 @@
+{
+  "exported": "2026-10-23",
+  "sourceStudy": "https://childrenhelpingscience.com/exp/studies/6286/",
+  "sourceStudyUUID": "1d2f8f0f-261f-4b8e-ad11-32b615c07f7a",
+  "sourceSHA256": "3f3951332846453a88d107c7afb5f95b343e680ca6277fd73dedc4ce15a552b3",
+  "sourceFNV1a": 868198028,
+  "originalReference": "https://c-steele.github.io/group-lookit/?rev=guided-walkthrough-20261003",
+  "referenceCommit": "bd506e2cd347418670a146b54acf002518297a26",
+  "recording": false,
+  "cameraAccess": true,
+  "consentSubmission": false,
+  "participantResponseStorage": false,
+  "notes": [
+    "Original CHS protocol restored, not modified by this export.",
+    "Camera check is an opt-in local preview. CHS consent, recording and upload screens remain references.",
+    "Parent instructions and Evelyn audio use the original CHS content.",
+    "32 review counterbalances, 37 source delivery entries each. Review selection is not participant random assignment."
+  ],
+  "version": {
+    "version": "V7",
+    "status": "working",
+    "created": "2026-11-11",
+    "sourceV6Commit": "f7035da75738c59b7ef2e22b5879016252ccd703",
+    "url": "https://meilingliu-code.github.io/group-v3-v5-chs-preview/versions/v7/",
+    "researcherUrl": "https://meilingliu-code.github.io/group-v3-v5-chs-preview/versions/v7/?researcher=1",
+    "parentViewDefault": true,
+    "changes": [
+      "Hide researcher navigation, review banner/footer, narration controls and feedback audio controls in the parent-facing view; preserve them in researcher view.",
+      "First look away in both illustrated walkthroughs begins after 2 seconds, preserving 1-second count increments and look-back reset.",
+      "Bold the restart sentence on the pause page.",
+      "Add a prominent on-video Play/Replay button to the real-parent example.",
+      "Add video-timed 1–2–3 counters to illustrated and real-baby practice.",
+      "Start real-baby practice at source time 17.8 seconds, about 2 seconds before the authored look away. Keep its 3-second criterion and 2-second response allowance.",
+      "Simplify study-movie bottom controls to Replay and Pause/Continue in parent view. Hide movie-source dropdown and manual review navigation."
+    ],
+    "recording": false,
+    "policy": "Continue editing V7 until the user ends this version or requests another version."
+  },
+  "sourceV0Commit": "2a7d2479696d0aa08760ee764f4df99772148936",
+  "sourceV3Commit": "cf09dbfc746234f3b4085adc59fcab6d8f14714d",
+  "cameraPreview": {
+    "recording": false,
+    "audio": false,
+    "uploads": false,
+    "source": "https://lookit.readthedocs.io/projects/frameplayer/en/latest/components/exp-lookit-webcam-display/doc.html",
+    "implementation": "Standalone browser adaptation; does not embed the CHS recorder or session service.",
+    "activation": "Only after the participant clicks Enable camera and allows browser access."
+  },
+  "sourceV4Commit": "1c0dfeace80d403ab875ce95e9fcd80414c4fa69",
+  "sourceV5Commit": "212b410b6997945ddbd7fb0aab7426d69153f5c1",
+  "sourceV6Commit": "f7035da75738c59b7ef2e22b5879016252ccd703"
+}
