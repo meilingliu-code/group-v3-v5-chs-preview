@@ -264,3 +264,9 @@ body:has(.gi-minimal-rule)>.preview-bar,body:has(.gi-minimal-rule)>.preview-foot
 /* Center the three steps between the eye and the elapsed-seconds counter. */
 .gi-static-practice .gi-practice-eye{margin-bottom:9px;}
 .gi-static-practice .gi-counter-slot{margin:17px auto 12px;}
+
+/* Compact, evenly spaced steps above the real-baby practice video. */
+.real-practice-instructions .gi-practice-guide li{font-size:17px;}
+.real-practice-instructions .gi-practice-guide li kbd{font-size:17px;}
+.real-practice-instructions .gi-practice-eye{margin-bottom:4px;}
+.real-practice-instructions .gi-counter-slot{margin:9px auto 12px;}
