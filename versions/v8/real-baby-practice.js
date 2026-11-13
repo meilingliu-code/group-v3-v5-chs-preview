@@ -42,7 +42,7 @@
       feedback.hidden=false;feedback.className='real-practice-feedback '+(passed?'is-correct':'is-retry');
       const messages={early:['A little early','Wait for 3 full seconds looking away. If the child looks back, start counting again.'],correct:['You timed it correctly!','That was 3 full seconds looking away. You’re ready to continue.'],late:['A little late','Press Space as soon as you’ve counted 3 full seconds looking away. Let’s try again.']};
       const [title,copy]=messages[kind];feedback.innerHTML='<strong></strong><p></p>';feedback.querySelector('strong').textContent=title;feedback.querySelector('p').textContent=copy;
-      status.textContent=passed?'Practice complete.':'You can try as many times as you like.';
+      status.textContent=passed?'Practice complete — choose Continue below.':'You can try as many times as you like.';if(passed){next.textContent='Continue →';requestAnimationFrame(()=>{feedback.scrollIntoView({behavior:'smooth',block:'nearest'});next.scrollIntoView({behavior:'smooth',block:'nearest'});});}
     }
     async function play(){
       if(dead||starting)return;starting=true;stop();passed=false;next.disabled=true;feedback.hidden=true;start.disabled=true;start.textContent='Practice running';status.textContent='Watch the child. Count silently, then press Space.';watched=0;lastTime=0;video.playbackRate=1;
