@@ -307,3 +307,16 @@ body:has(.gi-minimal-rule)>.preview-bar,body:has(.gi-minimal-rule)>.preview-foot
 .camera-check-tips .v8-visual-tip strong{font-size:16px;}
 .camera-check-tips .v8-visual-tip div>span{font-size:14px;}
 @media(max-width:760px){.v8-ready-tips{grid-template-columns:1fr;gap:8px;}.v8-ready-tips .v8-visual-tip{padding:10px 14px;}}
+
+/* V8: equal space above and below every forward navigation button. */
+#experiment-player > .exp-lookit-instructions:has(> .exp-text > #nextbutton){padding-bottom:0!important;}
+#experiment-player > .exp-lookit-instructions > .exp-text:has(> #nextbutton){display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;padding-top:24px!important;padding-bottom:24px!important;}
+#experiment-player .exp-text > #nextbutton{float:none!important;margin:0 0 0 auto!important;align-self:center;}
+#experiment-player .exp-text:has(> #nextbutton) > [data-back]{float:none!important;margin:0!important;align-self:center;}
+#experiment-player .exp-text:has(> #nextbutton) > .gi-walkthrough-dock{flex-basis:100%;}
+.real-practice-card{padding-bottom:0!important;}
+.real-practice-navigation{padding-top:18px!important;padding-bottom:18px!important;}
+.camera-check-card{padding-bottom:0!important;}
+.camera-check-navigation{padding-top:24px!important;padding-bottom:24px!important;}
+.reference-card:has(> .reference-actions){padding-bottom:0!important;}
+.reference-actions{align-items:center;padding-top:24px!important;padding-bottom:24px!important;}
