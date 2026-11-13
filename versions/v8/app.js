@@ -76,7 +76,7 @@
       return html;
     }).join('');
     player.innerHTML='<div class="row exp-lookit-instructions instruction-'+esc(id)+'"><div class="exp-text">'+blocks+'</div></div><div class="row exp-lookit-instructions"><div class="exp-text">'+(f.showPreviousButton?'<button type="button" class="btn btn-default pull-left" data-back>Previous</button>':'')+'<button type="button" id="nextbutton" class="btn btn-success pull-right">'+esc(f.nextButtonText||'Continue →')+'</button></div></div>';
-    const next=document.querySelector('#nextbutton');
+    const next=document.querySelector('#nextbutton');if(id==='group-guided-count-real-v3')next.disabled=true;
     player.querySelector('[data-back]')?.addEventListener('click',()=>move(-1));
     next.onclick=()=>{
       if(next.disabled)return;
