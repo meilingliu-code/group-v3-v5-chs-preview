@@ -94,7 +94,7 @@
   function consentReference(){
     const c=frames['video-consent'];
     const paragraphs=[['Why we are running this study',c.purpose],['What happens during this study',c.procedures],['What are the risks?',c.risk_statement],['What are the benefits?',c.payment],['How we use recordings',c.datause],['Questions about research rights',c.research_rights_statement],['Study team contact',c.PIContact]];
-    reference('CHS consent document · read-only reference','<div class="preview-only"><strong>No consent is collected here.</strong>This is the source study’s text for collaborator review. Do not use this public preview to enroll a family.</div>'+paragraphs.map(([h,t])=>'<h2>'+esc(h)+'</h2><p>'+esc(t)+'</p>').join(''),'Continue to debrief →');
+    reference('CHS consent document · read-only reference','<div class="preview-only"><strong>No consent is collected here.</strong>This is the source study’s text for collaborator review. Do not use this public preview to enroll a family.</div>'+paragraphs.map(([h,t])=>'<h2>'+esc(h)+'</h2><p>'+esc(t)+'</p>').join(''),'Continue →');
   }
   function cameraReference(id,f){movieCleanup=window.GroupCameraPreview.mount({player,onPrevious:()=>move(-1),onContinue:()=>move(1)});}
   function replaceParameters(value,params){
