@@ -1,0 +1,11 @@
+{
+  "version": "V8",
+  "status": "working",
+  "created": "2026-11-13",
+  "sourceV7Commit": "5d5f5fcf630aa32f723d341c9f7d1bb2e46cd142",
+  "changes": [
+    "Add before 3 seconds to the look-back Next button.",
+    "Remove Some movies move on by themselves from the pause page."
+  ],
+  "recording": false
+}
