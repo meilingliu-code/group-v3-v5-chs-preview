@@ -1,0 +1,18 @@
+{
+  "source": "https://osf.io/download/juea4/",
+  "pinnedAsset": "./assets/original-parent-practice-scored-v4.mp4",
+  "sourceFilename": "parent-control-practice-back.mp4",
+  "sha256": "28068e7ab9291dc686b655f7450cb8a0d85dc0bc37bf33a64f923349784011b7",
+  "durationSeconds": 27.7,
+  "videoTrackDurationSeconds": 26.84,
+  "durationNotes": "Container/audio metadata reports 27.7 seconds; the video track is approximately 26.84 seconds. Browser media duration may report either. Annotated look-away timing at 19.8 seconds is within both tracks; scoring is based on the playback clock, not total duration.",
+  "annotationMethod": "Manual review of this prerecorded rear-view training example, including 0.2-second frame intervals around the head turn. This is a local practice annotation, not an author-supplied or automatically detected eye-gaze annotation.",
+  "annotationNotes": "The sustained head turn away begins between 19.6 and 19.8 seconds. A conservative onset of 19.8 is used. No return to the screen is visible after this onset. The clip does not contain an annotated early look-back event; the classifier nevertheless resets after each on-screen interval, verified separately with a synthetic return-to-screen test.",
+  "intervals": [{"start":0,"end":19.8,"gaze":"on"},{"start":19.8,"end":27.7,"gaze":"away"}],
+  "continuousAwaySeconds": 3,
+  "correctFromSeconds": 22.8,
+  "correctUntilSeconds": 24.8,
+  "responseAllowanceSeconds": 2,
+  "purpose": "Parent practice feedback for this exact prerecorded clip only; no live infant gaze measurement and no response storage.",
+  "ruleConfirmedByUser": "Three continuous seconds looking away; reset after any look back."
+}

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 224" role="img" aria-labelledby="gi-setup-v1-title gi-setup-v1-desc">
+  <title id="gi-setup-v1-title">A simple setup, together</title>
+  <desc id="gi-setup-v1-desc">A brown-skinned baby sits securely on a brown-skinned adult’s lap beside a laptop. The clear desk, green check mark, and uncluttered space show that setup is simple.</desc>
+  <ellipse cx="190" cy="115" rx="174" ry="98" fill="#eff7f2"/>
+  <ellipse cx="190" cy="211" rx="156" ry="7" fill="#dcebe3"/>
+  <!-- A single chair and a clear desk: no toys, extra screens, or distractions. -->
+  <path d="M304 115v57h-60m55 5 10 31m-55-31-7 31" fill="none" stroke="#a5c3b6" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M242 171h57" stroke="#c1d8ce" stroke-width="12" stroke-linecap="round"/>
+  <path d="M32 172h160m-145 3-4 33m133-33 5 33" fill="none" stroke="#a7bfb5" stroke-width="7" stroke-linecap="round"/>
+  <!-- Keep the original laptop, check, soft colors, and tiny gold accents. -->
+  <g transform="translate(-12 42) scale(.78)">
+    <ellipse cx="140" cy="87" rx="115" ry="73" fill="#eff7f2"/>
+    <rect x="55" y="28" width="170" height="108" rx="12" fill="#415c65"/>
+    <rect x="65" y="39" width="150" height="84" rx="6" fill="#e9f4fb"/>
+    <circle cx="140" cy="33" r="2" fill="#b8d4de"/>
+    <path d="m55 136-18 12q-3 5 7 5h192q10 0 7-5l-18-12Z" fill="#9cb9b9"/>
+    <path d="M117 139h46l-5 5h-36Z" fill="#e5eeeb"/>
+    <circle cx="140" cy="81" r="27" fill="#73a58e"/>
+    <path d="m127 81 9 9 18-21" fill="none" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M32 44v10m-5-5h10" stroke="#dcbf8f" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <!-- Adult seated above and behind the baby, looking toward the laptop. -->
+  <path d="M252 166q18-8 39 1l-12 24h-35l-9 18h-22l12-37Z" fill="#526e69"/>
+  <path d="m263 187 20 21h20l-21-32" fill="#526e69"/>
+  <path d="M213 208h25m44 0h22" stroke="#3f5956" stroke-width="7" stroke-linecap="round"/>
+  <path d="M250 90q24-13 43 1 11 25 6 72-22 13-52 0l-6-36Z" fill="#7eac98"/>
+  <path d="M258 83v15q8 7 17-1V81" fill="#8d573c"/>
+  <path d="M248 38q8-16 27-11 22 6 20 28l-3 14q-6 18-23 18-15 0-24-17l-7-5 5-12Z" fill="#8d573c"/>
+  <path d="M243 50q-7-10 0-20 2-15 17-15 10-9 22-1 14-2 20 11 12 7 7 20 4 13-8 18l-9-6q3-17-7-22-12 11-27 8l-8 12Z" fill="#3c302d"/>
+  <circle cx="300" cy="23" r="12" fill="#3c302d"/>
+  <circle cx="307" cy="32" r="10" fill="#3c302d"/>
+  <path d="M247 53h4" stroke="#3c302d" stroke-width="3" stroke-linecap="round"/>
+  <path d="M250 69q4 4 9 1" fill="none" stroke="#613c2d" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M285 60q6-6 8 0 0 6-6 7" fill="none" stroke="#bc835e" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Baby sits upright on the lap, facing the computer. -->
+  <path d="M217 133q15-10 30 0l10 31-14 11-31-10Z" fill="#e7c994"/>
+  <path d="M222 124v13q6 5 12 0v-15" fill="#bd805a"/>
+  <path d="M213 97q9-9 22-5 13 6 14 20-2 19-19 21-14 1-22-13l-5-3 4-11Z" fill="#bd805a"/>
+  <path d="M207 105q-8-9 0-17 1-10 13-10 8-8 17-1 11-1 15 9 8 6 3 16l-9 4-4-9q-11 5-21 0l-8 11Z" fill="#49372e"/>
+  <path d="M212 111h3" stroke="#49372e" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M215 123q4 3 8 0" fill="none" stroke="#895437" stroke-width="2" stroke-linecap="round"/>
+  <path d="m219 143-12 7" stroke="#e7c994" stroke-width="11" stroke-linecap="round"/>
+  <path d="m207 150-6-1" stroke="#bd805a" stroke-width="7" stroke-linecap="round"/>
+  <path d="m238 169-5 17m-13-19-6 16" stroke="#bd805a" stroke-width="10" stroke-linecap="round"/>
+  <path d="m229 187 7 2m-25-6 7 3" stroke="#bd805a" stroke-width="8" stroke-linecap="round"/>
+  <!-- A calm supporting arm around baby's waist; no pointing or prompting. -->
+  <path d="M282 110q-1 26-23 46l-25 1" fill="none" stroke="#7eac98" stroke-width="17" stroke-linecap="round"/>
+  <path d="M239 156q-14 6-25 0" fill="none" stroke="#8d573c" stroke-width="10" stroke-linecap="round"/>
+  <path d="M335 92v10m-5-5h10" stroke="#dcbf8f" stroke-width="3" stroke-linecap="round"/>
+</svg>

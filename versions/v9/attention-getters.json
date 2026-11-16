@@ -1,0 +1,32 @@
+{
+  "created": "2026-11-05",
+  "referenceVideo": "https://www.youtube.com/watch?v=5-aMd-tlDUc",
+  "referenceSections": [
+    "26:33–27:43: attention getter videos to bring attention back to the screen",
+    "1:00:56–1:01:15: calibration positions for interpreting gaze direction"
+  ],
+  "sourceVideoTranscriptReviewed": true,
+  "calibration": {
+    "sourceFilename": "callibration.m4v",
+    "asset": "./assets/calibration-v4.mp4",
+    "placement": "Once before the original study movie sequence"
+  },
+  "attentionGetters": [
+    {
+      "sourceFilename": "callibshape.mov",
+      "asset": "./assets/attention-shapes-v4.mp4"
+    },
+    {
+      "sourceFilename": "bluestars.mov",
+      "asset": "./assets/attention-stars-v4.mp4"
+    }
+  ],
+  "placement": "Replace the 14 existing attention-getter slots, alternating the two supplied clips immediately before each infant-controlled trial. Add calibration once at the start. Attention/calibration time is separate from measurement.",
+  "originalTrialCount": 37,
+  "infantControlledTrials": 14,
+  "newSequenceLength": 38,
+  "originalTrialOrderAndMeasurementDelaysUnchanged": true,
+  "codec": "H.264 yuv420p video with original AAC audio, MP4 fast-start",
+  "recording": false,
+  "replacedAttentionGetterFrames": 14
+}
